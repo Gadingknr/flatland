@@ -1,6 +1,10 @@
+var square = document.getElementById('square');
 
+function changeColour(colour) {
+    square.background = colour
+}
 
-
+square.addEventListener('click', (event) => changeColour('green'))
 
 
 function createBuzzwordPhrase() {
@@ -14,3 +18,4 @@ function createBuzzwordPhrase() {
     let idx_out = Math.floor(Math.random() * outcome.length);
 
     return  buzz[idx_buz] + " " + action[idx_act] + " " + outcome[idx_out];
+}
