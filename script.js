@@ -1,5 +1,6 @@
 var square = document.getElementById('square');
-var square = document.getElementById('word');
+
+var words = document.getElementById('word');
 
 function greeting() {
     words.innerHTML = "Welcome to Flatland <br> I am square!"
