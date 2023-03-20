@@ -5,9 +5,13 @@ function greeting() {
     words.innerHTML = "Welcome to Flatland <br> I am square!"
 }
 
+function clicked() {
+    //var msg = "Build a<br>" + createBuzzwordPhrase();
+    //words.innerHTML = msg;
+    words.innerHTML = "Build a<br>" + createBuzzwordPhrase();
+}
 
-
-square.addEventListener('click', (event) => changeColour('green'))
+square.addEventListener('click', (event) => clciked())
 
 /*create hover message*/
 square.addEventListener('mouseover', (event) => changeColour('grey'));
